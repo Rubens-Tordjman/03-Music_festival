@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta charset="UTF-8">
+    <title>Réservation billet - Music Festival</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+   
+   <header>
+
+       <div class="container bgheader">
+
+          <div class="header-flex">
+
+               <a href="index.html"><img  class="logo" src="m03-music-festival/img/logo-music-festival.png" alt=""></a>
+
+            <nav class="menu-flex">
+               <a href="index.html">Accueil</a>
+               <a href="#">Concerts</a>
+               <a href="#">Dates</a>
+               <a href="billet.html">Billetteries</a>
+               <a href="#">Contact</a>
+            </nav>
+
+           </div>
+
+       </div>
+
+   </header>
+   
+   
+   <main>
+       
+       <section class="formulaire">
+           
+           <h1>Réservation du billet</h1>
+           
+           <div class="container formulaire">
+               
+               <form action="#" method="post">
+                   
+                    <fieldset>
+                       
+                       <legend>Concert</legend>
+                       
+                       <div>
+                           <label for="concert">Choisissez votre concert</label>    
+                           <select name="concert" id="concert">
+                               
+                               <option value="1">
+                                   Les Fatals Picards
+                               </option>
+                               
+                               <option value="2">
+                                   L'incroyable Toto
+                               </option>
+                               
+                               <option value="3">
+                                   Les Fatals Titi
+                               </option>
+                               
+                           </select>   
+                        </div> 
+                        
+                   </fieldset>
+                              
+                    <fieldset>
+                              
+                              <legend>Billet</legend>
+                              
+                            <div> 
+                              
+                              <label for="NbBillet">Nombre de billets:</label>
+                              <input type="radio" name="nbbillet" value="1">1
+                              <input type="radio" name="nbbillet" value="2">2
+                              
+                            </div>
+                              
+                          </fieldset>
+                           
+                    <fieldset>
+                             
+                            <legend>Civilités</legend>
+                             
+                            <div class="nomFamille">
+                                 <label for="firstName">Nom:</label>
+                                 <input id="firstName" type="text" value="" name="first-name" placeholder="Votre nom">
+                            </div>
+                            <div class="prenom">    
+                                 <label for="name">Prénom:</label>
+                                 <input id="name" type="text" value="" name="nom" placeholder="Votre prénom">
+                            </div>
+                            <div class="mail">     
+                                 <label for="email">Email:</label>
+                                 <input id="email" type="email" value="" name="mail" placeholder="Votre email">
+                             </div>
+                              
+                    </fieldset>
+                          
+                    <fieldset>
+                             
+                             <legend>Réduction</legend>
+                             
+                             <div>
+                                <label>Pass Concert</label>
+                                <input type="checkbox" value="concert" name="concert">
+                                <label>Pass Festival</label>
+                                <input type="checkbox" value="festival" name="festival">
+                             </div>
+                              
+                    </fieldset>              
+                   
+                   <fieldset>
+                             
+                             <legend>Commentaire</legend>
+                             
+                             <div class="commentaire">
+                                 <textarea name="commentaire" placeholder="Laisser un commentaire" cols="30" rows="10"></textarea>
+                             </div>
+                              
+                    </fieldset>
+                   
+                   <div class="button">
+                   <button type="submit">Valider</button>
+                   </div>
+                   
+               </form>
+               
+           </div>
+           
+       </section>
+       
+       
+   </main>
+   
+   
+   <footer>
+
+       <div class="container">
+
+            <a href="https://www.wf3.fr/" target="_blank"><img src="m03-music-festival/img/logo-wf3.png" alt=""></a>
+
+            <p>&copy;2020, <a href="https://genesis-technology.fr/" target="_blank">Genesis Technology</a> pour <a href="https://www.wf3.fr/" target="_blank">WebForce3</a>.<br>
+Cet exercice est mis à disposition pour l'usage personnel des étudiants.<br>
+Il est interdit <strong>de le modifier</strong> - <strong>de le diffuser</strong>, y compris <strong>sur le web</strong> - <strong>de se l'attribuer</strong> - ou <strong>de l'utiliser à des fins commerciales et autres.</strong>
+Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a href="https://genesis-technology.fr/" target="_blank">Genesis Technology</a>.</p>
+
+       </div>
+
+   </footer>
+   
+</body>
+
+
+</html>

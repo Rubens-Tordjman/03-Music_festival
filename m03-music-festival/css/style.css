@@ -1,0 +1,309 @@
+/*MOBILE FIRST*/
+*
+{
+    box-sizing: border-box;
+}
+
+
+@font-face
+{
+    font-family: "milkshake";
+    src: url(../m03-music-festival/fonts/milkshake-400/milkshake-400.ttf)
+}
+
+
+.container
+{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+/*GENERAL*/
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    font-size: 1rem;
+    color: #000;
+    text-align: justify;
+    margin: 15px;
+}
+
+h1, h2, h3, h4
+{
+    font-family: "milkshake";
+    color: #053964;
+}
+
+h1
+{
+    font-size: 2.8rem;
+}
+
+h2
+{
+    font-size: 2rem;
+}
+
+h3
+{
+    font-size: 1.8rem;
+}
+
+h4
+{
+    font-size: 1.4rem;
+}
+
+
+
+a
+{
+    color: #ff9400;
+}
+
+a:hover
+{
+    color: #ffb129;
+}
+
+/*HEADER*/
+
+header
+{
+    
+    text-align: center;
+}
+
+header .bgheader{
+    background-color: #0B5FA5;
+}
+
+header .header-flex
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header .menu-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+header nav a
+{
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+
+header .logo
+{
+    width: 150px;
+    margin: 20px;
+}
+
+
+
+/*MAIN*/
+
+main picture img
+{
+    width: 100%;
+}
+
+main article iframe, video
+{
+    width: 560px;
+    max-width: 100%
+}
+
+
+main .betterave
+{
+    width: 150px;
+    float: left;
+}
+
+article a
+{
+    background-color: #053964;
+    color: #ff9400;
+    padding: 15px;
+    border-radius: 3px;
+    text-decoration: none;
+
+}
+
+article a:hover
+{
+    background-color: #084A80;
+    color: #ffb129;
+}
+
+main h1, h2, h3
+{
+    border-bottom: 2px solid #053964;
+}
+
+aside
+{
+    background-color: #FFAC39;
+    display: none;
+    margin-bottom: 100px;
+}
+
+
+
+/*BILLET-PAGE2*/
+
+.formulaire
+{
+    margin: 0 auto; 
+    width: 100%;
+}
+
+.formulaire form
+{
+    border: 2px solid #ffb129;
+}
+
+.formulaire legend
+{
+    font-size: 1.4rem;
+    font-family: "milkshake";
+}
+
+fieldset label
+{
+    font-weight: bold;
+    margin: 5px;
+}
+
+fieldset 
+{
+    border: 1px solid #ccc;
+    margin: 20px;
+}
+
+fieldset textarea
+{
+    width: 100%;
+}
+
+.formulaire .button
+{
+    text-align: center;
+    background-color: #053964;
+    color: #ff9400;
+}
+
+.button:hover
+{
+    background-color: color: #084A80;
+    color: #ffb129;
+}
+
+select, .nomFamille, .prenom, .mail
+{
+    display: flex;
+    flex-direction: column;
+}
+
+select, input
+{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 35px;
+}
+
+
+/*FOOTER*/
+
+footer
+{
+    text-indent: 0;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a
+{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*MEDIA QUERIES*/
+
+/*TABLETTE*/
+
+@media screen and (min-width: 768px)
+{
+    .container{
+        width: 70%;
+    }
+    
+    aside{
+        display: block;
+        
+    }
+    
+    body{
+        margin: 0 15px;
+    }
+    
+    header .menu-flex{
+        
+        flex-direction: row;
+        justify-content: center;    
+    }
+    
+    header nav a{
+    margin: auto 10px 20px 10px; 
+    }
+    
+
+}
+
+/*DESKTOP*/
+
+@media screen and (min-width: 1025px)
+{
+    .container{
+        width: 80%;
+    }
+    
+    
+    .concerts{
+        flex-basis: 68%;
+    }
+    
+    aside{
+        flex-basis: 30%
+    }
+    
+    .flex-section-aside{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    header .header-flex{
+        
+        flex-direction: row;
+        justify-content: space-between; 
+    }
+    
+   header nav a{
+    margin: auto 30px auto 10px 
+    }
+    
+    .formulaire{
+    width: 70%;
+}
+}
